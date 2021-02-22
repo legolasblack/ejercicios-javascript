@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="button1">
+    <input type="button" id="button2">
+    <input type="text" id="mitext">
+    
+    <script>
+        //se asigna un id a cada etiqueta input 
+        //y con esto puede gusrdarce en un objeto
+        //con el objetivo de modificar sus propiedades y cambiar el estilo
+        var miboton=document.getElementById("button1");
+        miboton.style.width="300px";
+        miboton.style.height="300px";
+        //miboton.style.backgroundColor(blue);
+        var miboton2=document.getElementById("button2");
+        miboton2.style.width="300px";
+        miboton2.style.height="300px";
+        miboton2.focus();
+        var mitext=document.getElementById("mitext");
+        //mitext.style.backgroundColor("black");
+        //mitext.style.color("black");
+        mitext.value="Escribe aqui...";
+       
+
+    </script>
+</body>
+</html>

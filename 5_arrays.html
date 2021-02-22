@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="css/micss.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="principal"><p class="logo">javascript arrays</p></div>
+    </div>
+    <div class="contenido">
+        <div class="principal">
+            <h1>Manejo de arrays</h1>
+        </div>
+    </div>
+    <script>
+        //declaracion de arrays
+        var array=new Array();
+        var arraysinarticulos=[];
+        var articulos=["zapatillas","pantalon","camiseta"];
+        var articulos2=new Array("zapatillas2","pantalon2","camiseta2");
+        //puedes alternar los tipos de parametros que guardas en un array 
+        //puedes guardar bool, int , strings en un solo array
+        console.log(articulos[0]);
+        console.log(articulos2[1]);
+        console.log(articulos[2]);
+//imprimimos en la pagina el primer de los elementos
+        document.write("<p>El primer articulo es <strong>");
+            document.write(articulos[0]+"</strong></p>");
+//utilizamos los metodos de la clase array para ver el tamaño del arreglo
+            //alert(array.length);
+            console.log(articulos.length);
+            //podemos agregar en la primer posicion del arreglo con 
+           //con el metodo unshift();
+           articulos.unshift("shorts");
+           //agregamos un articulo al array en la parte final e imprimimos esa posicion
+           articulos.push("gorra");
+           document.write("<p>"+articulos[articulos.length-1]+"</p>");
+           //volvemos a a imprimir 
+           document.write("<p>El primer articulo es <strong>");
+            document.write(articulos[0]+"</strong></p>");
+
+    </script>
+    
+</body>
+</html>
