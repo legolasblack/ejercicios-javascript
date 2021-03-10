@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaramos un arreglo llamado meses que contiene los meses del año
+        var meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+        var contador=0;//utilizamos una variable para recorrer el arreglo
+        //definimos una sintaxis basica de while 
+        while(contador<meses.length){
+            document.write("el mes es <strong>"+ meses[contador]+"<strong><br/>");
+                contador++;
+
+        }
+        //definimos una sintaxis basica de un for 
+        for(var i=0;i<meses.length;i++){
+            document.write("el mes es <strong>"+ meses[i]+"<strong><br/>")
+        }
+
+        //definimos la sisntaxis de un ciclo do while
+        contador=0; 
+        do{
+            document.write("impreso con do el mes es <strong>"+ meses[contador]+"<strong><br/>");
+                contador++;
+
+        }while(contador<meses.length);
+        //la utilizacion de do while nos permite entrar en un primer codigo 
+    </script>
+</body>
+</html>
