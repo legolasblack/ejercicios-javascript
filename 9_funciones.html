@@ -10,6 +10,8 @@
     }
     </style>
     <script>
+        //definimos a partir de aqui una funcion en javascript
+        //definimos una funcion que imprime la fecha y mas adelante la imprimimos en una etiqueta
         function dia_de_hoy(){
             var hoy=new Date();
             document.write(hoy.toDateString());
@@ -20,5 +22,23 @@
     <h1 class="centrado"><strong>Y que dia es hoy</strong></h1>
 
     <p>hoy es, dia: <script>dia_de_hoy();</script></p>
+---------------------------------------------------
+    <script>
+        //en este apartado definiremos la funcion con pase de parametros
+        function nuevafuncion(num, numero){
+            var num1=num;
+            var num2=numero;
+            resultado=num1+num2;
+            //de esta forma no utilizamos parametros demas solo los que se envian.
+            //resultado=num+numero;
+            document.write(resultado);
+            return resultado;
+        }
+    </script>
+
+    <p>
+        esta es la suma de 5+10=<script>nuevafuncion(5,10);</script>
+    </p>
+    <p>este es el resultado de 10+10 mandado por el return= <script>nuevafuncion(10,10);</script></p>
 </body>
 </html>
