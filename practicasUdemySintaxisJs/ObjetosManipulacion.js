@@ -4,7 +4,7 @@ const persona = {
     nombre: "diego",
     posicion: "Developer",
     email: "legolas_black@gmail.com ",
-}
+    }
 console.log(typeof persona)
 
 
@@ -42,9 +42,37 @@ const producto= {
     existencia : true
 }
 
-const {nombre: nombreProducto, direccion : {calle}}= producto
-const {nombre: nombreCliente}= cliente
+const {nombre: nombreCliente, direccion : {calle}} = cliente
+const {nombre: nombreProducto}= producto
 
 console.log(nombreProducto)
 console.log(nombreCliente)
 console.log(calle)
+
+// En este primer ejemplo empalmamos los objetos para que aparezcan como objetos
+//individuales y puedan manipularse
+const carrito = Object.freeze( {
+    cantidad : 1,
+    producto,
+    cliente,
+})
+
+
+
+//este segundo ejemplo al imprimirlo enm la consola denota
+//que los atributos de la variable producto y cliente, han sido 
+// trasmitidas hacia la variable carrito dos sin conserver la estructura raiz
+const carrito2 = Object.freeze({
+    cantidad:2,
+    ...producto,
+    ...cliente 
+})
+
+console.log(carrito)
+console.log(carrito2)
+
+//si notamos que la propiedad nombre se sustituyo por el ultimo nombre que tiene el objeto 
+// y lo que en realidad necesito es conservar los dos nombres
+
+ 
+
